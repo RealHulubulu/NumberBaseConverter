@@ -4,12 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Here is test input 111111");
+        System.out.println("Testing Inputs");
 
-        DecimalBinaryHexConverter decimalToBinaryToDecimal = new DecimalBinaryHexConverter(111111);
+        DecimalBinaryHexConverter decimalBinaryHexConverter = new DecimalBinaryHexConverter(111);
         System.out.println();
-        System.out.println(decimalToBinaryToDecimal.binaryToDecimal());
-        System.out.println(decimalToBinaryToDecimal.decimalToBinary());
+        System.out.println(decimalBinaryHexConverter.binaryToDecimal());
+        System.out.println(decimalBinaryHexConverter.decimalToBinary());
+        System.out.println(decimalBinaryHexConverter.decimalToHex());
+
 
     }
     }
