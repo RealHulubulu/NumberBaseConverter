@@ -4,20 +4,26 @@ import java.util.*;
 
 public class DecimalBinaryHexConverter {
 
-    private int input;
+    private int input; // will need to change data type
+    private String hexOutput;
+    private int binaryOutput;
+    private int decimalOutput;
 
-    public DecimalBinaryHexConverter(int input){
+    public DecimalBinaryHexConverter(int input){ // will need to change input data type to general type or String b/c hex input
         this.input = input;
 
     }
 
     //decimal to binary converter
-    public int decimalToBinary(){
-        return input%2;
+    public void decimalToBinary(){
+        binaryOutput = input%2;
+    }
+    public int getBinaryOutput(){
+        return binaryOutput;
     }
 
     //decimal to hex converter
-    public String decimalToHex(){
+    public void decimalToHex(){
 
         ArrayList<Integer> list = new ArrayList<>();
         String dummyHex = "";
@@ -51,11 +57,15 @@ public class DecimalBinaryHexConverter {
             counter++;
             listLength--;
         }
-        return dummyHex;
+        hexOutput = dummyHex;
+    }
+
+    public String getHexOutput(){
+        return hexOutput;
     }
 
     //binary to decimal converter
-    public int binaryToDecimal(){
+    public void binaryToDecimal(){
 
         ArrayList<Integer> list = new ArrayList<>();
         int dummyDecimal = 0;
@@ -75,7 +85,31 @@ public class DecimalBinaryHexConverter {
             listLength--;
         }
 
-        return dummyDecimal;
+        decimalOutput = dummyDecimal;
+    }
+
+    public int getDecimalOutput(){
+        return decimalOutput;
+    }
+
+
+    public void binaryToHex(){ // need to finish this method
+
+        ArrayList<Integer> list = new ArrayList<>();
+        String dummyHex = "";
+        int dummyInput = input;
+        while (dummyInput > 0) {
+            int remainderInHex = dummyInput % 16;
+            list.add(remainderInHex);
+            dummyInput = dummyInput / 16;
+        }
+        int listLength = list.size();
+        int counter = 0;
+
+    }
+
+    public int getInput(){
+        return  input;
     }
 
 

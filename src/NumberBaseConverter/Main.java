@@ -6,11 +6,14 @@ public class Main {
 
         System.out.println("Testing Inputs");
 
-        DecimalBinaryHexConverter decimalBinaryHexConverter = new DecimalBinaryHexConverter(111);
+        DecimalBinaryHexConverter decimalBinaryHexConverter = new DecimalBinaryHexConverter(11);
         System.out.println();
-        System.out.println(decimalBinaryHexConverter.binaryToDecimal());
-        System.out.println(decimalBinaryHexConverter.decimalToBinary());
-        System.out.println(decimalBinaryHexConverter.decimalToHex());
+        decimalBinaryHexConverter.binaryToDecimal();
+        System.out.println(decimalBinaryHexConverter.getDecimalOutput());
+        decimalBinaryHexConverter.decimalToBinary();
+        System.out.println(decimalBinaryHexConverter.getBinaryOutput());
+        decimalBinaryHexConverter.decimalToHex();
+        System.out.println(decimalBinaryHexConverter.getHexOutput());
 
 
     }
