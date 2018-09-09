@@ -1,5 +1,7 @@
 package NumberBaseConverter;
 
+import java.util.ArrayList;
+
 public class DecimalToBinary {
 
     private int input;
@@ -10,8 +12,28 @@ public class DecimalToBinary {
     }
 
     public void decimalToBinary(){
-        binaryOutput = input%2;
+
+        ArrayList<Integer> list = new ArrayList<>();
+        int dummyBinary = 0;
+        int dummyInput = input;
+        while (dummyInput > 0) {
+            int remainderInBinary = dummyInput % 2;
+            list.add(remainderInBinary);
+            dummyInput = dummyInput / 2;
+        }
+        int listLength = list.size();
+        int counter = 0;
+        dummyBinary = 0;
+        while (counter < list.size()){
+            dummyBinary += list.get(counter) * (int)Math.pow(10, counter);
+            counter++;
+        }
+
+        binaryOutput = dummyBinary;
+
     }
+
+
     public int getBinaryOutput(){
         return binaryOutput;
     }

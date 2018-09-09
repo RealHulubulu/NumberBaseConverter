@@ -11,6 +11,21 @@ public class Main {
         binaryToHex.binaryToHex();
         System.out.println(binaryToHex.getHexOutput());
 
+        System.out.println();
+        HexToDecimal hexToDecimal = new HexToDecimal("1D");
+        hexToDecimal.hexToDecimal();
+        System.out.println(hexToDecimal.getDecimalOutput());
+
+        System.out.println();
+        DecimalToBinary decimalToBinary = new DecimalToBinary(13);
+        decimalToBinary.decimalToBinary();
+        System.out.println(decimalToBinary.getBinaryOutput());
+
+        System.out.println();
+        HexToBinary hexToBinary = new HexToBinary("1D");
+        hexToBinary.hexToBinary();
+        System.out.println(hexToBinary.getBinaryOutput());
+
 
     }
     }
