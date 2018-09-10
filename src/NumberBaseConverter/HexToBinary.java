@@ -9,11 +9,11 @@ public class HexToBinary {
         this.input = input;
     }
 
-    public void hexToBinary() {
+    public void convertHexToBinary() {
         HexToDecimal hexToDecimal = new HexToDecimal(input);
-        hexToDecimal.hexToDecimal();
+        hexToDecimal.convertHexToDecimal();
         DecimalToBinary decimalToBinary = new DecimalToBinary(hexToDecimal.getDecimalOutput());
-        decimalToBinary.decimalToBinary();
+        decimalToBinary.convertDecimalToBinary();
         binaryOutput = decimalToBinary.getBinaryOutput();
     }
 

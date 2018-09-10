@@ -11,7 +11,7 @@ public class BinaryToHex {
         this.input = input;
     }
 
-    public void binaryToHex(){ // need to finish this method
+    public void convertBinaryToHex(){ // need to finish this method
 
         ArrayList<Integer> list = new ArrayList<>();
         String dummyHex = "";
@@ -36,10 +36,10 @@ public class BinaryToHex {
             arrayInput = list.get(listLength - 1);
 
             BinaryToDecimal binaryToDecimal = new BinaryToDecimal(arrayInput);
-            binaryToDecimal.binaryToDecimal();
+            binaryToDecimal.convertBinaryToDecimal();
             arrayInput = binaryToDecimal.getDecimalOutput();
             DecimalToHex decimalToHex = new DecimalToHex(arrayInput);
-            decimalToHex.decimalToHex();
+            decimalToHex.convertDecimalToHex();
 
             //DecimalBinaryHexConverter decimalBinaryHexConverter = new DecimalBinaryHexConverter(arrayInput);
             //decimalBinaryHexConverter.binaryToDecimal();

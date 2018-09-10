@@ -13,7 +13,7 @@ public class DecimalToHex {
     }
 
     //decimal to hex converter
-    public void decimalToHex(){
+    public void convertDecimalToHex(){
 
         ArrayList<Integer> list = new ArrayList<>();
         String dummyHex = "";

@@ -13,7 +13,7 @@ public class BinaryToDecimal {
     }
 
     //binary to decimal converter
-    public void binaryToDecimal(){
+    public void convertBinaryToDecimal(){
 
         ArrayList<Integer> list = new ArrayList<>();
         int dummyDecimal = 0;

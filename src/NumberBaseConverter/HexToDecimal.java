@@ -12,7 +12,7 @@ public class HexToDecimal {
         this.input = input;
     }
 
-    public void hexToDecimal(){
+    public void convertHexToDecimal(){
         ArrayList<Integer> list = new ArrayList<>();
         int dummyDecimal = 0;
         String dummyInput = input;

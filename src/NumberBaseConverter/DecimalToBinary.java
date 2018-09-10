@@ -11,7 +11,7 @@ public class DecimalToBinary {
         this.input = input;
     }
 
-    public void decimalToBinary(){
+    public void convertDecimalToBinary(){
 
         ArrayList<Integer> list = new ArrayList<>();
         int dummyBinary = 0;
