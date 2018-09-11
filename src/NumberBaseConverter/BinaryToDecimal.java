@@ -8,11 +8,11 @@ public class BinaryToDecimal {
 
     private int decimalOutput;
 
-    public BinaryToDecimal(int input){ // will need to change input data type to general type or String b/c hex input
+    public BinaryToDecimal(int input){
         this.input = input;
     }
 
-    //binary to decimal converter
+
     public void convertBinaryToDecimal(){
 
         ArrayList<Integer> list = new ArrayList<>();

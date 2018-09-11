@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class DecimalToHexTest {
 
     @Test
-    public void decimalToHex() {
+    public void convertDecimalToHex() {
         DecimalToHex decimalToHex = new DecimalToHex(15);
         decimalToHex.convertDecimalToHex();
         assertEquals("F", decimalToHex.getHexOutput());
@@ -32,10 +32,6 @@ public class DecimalToHexTest {
 
 
 
-    //@Test
-    //public void getInput() {
-    //}
-
     @Test
     public void getInput() throws NoSuchFieldException, IllegalAccessException {
 
@@ -51,9 +47,6 @@ public class DecimalToHexTest {
         assertEquals("field wasn't retrieved properly", result, 15);
     }
 
-    @Test
-    public void setInput() {
-    }
 
     @Test
     public void setInputForDecimalToHex() throws NoSuchFieldException, IllegalAccessException {

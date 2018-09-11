@@ -16,9 +16,6 @@ public class DecimalToBinaryTest {
 
     }
 
-    //@Test
-    //public void getBinaryOutput() {
-    //}
 
     @Test
     public void getBinaryOutput() throws NoSuchFieldException, IllegalAccessException {
@@ -35,12 +32,8 @@ public class DecimalToBinaryTest {
         assertEquals("field wasn't retrieved properly", result, 1111);
     }
 
-    //@Test
-    //public void getInput() {
-    //}
-
     @Test
-    public void getInput() throws NoSuchFieldException, IllegalAccessException {
+    public void getInputForDecimalToBinary() throws NoSuchFieldException, IllegalAccessException {
 
         final DecimalToBinary testDecimalToBinary = new DecimalToBinary(15);
         final Field field = testDecimalToBinary.getClass().getDeclaredField("input");
@@ -54,15 +47,6 @@ public class DecimalToBinaryTest {
         assertEquals("field wasn't retrieved properly", result, 15);
     }
 
-
-
-
-
-
-
-    //@Test
-    //public void setInput() {
-    //}
 
     @Test
     public void setInputForDecimalToBinary() throws NoSuchFieldException, IllegalAccessException {
